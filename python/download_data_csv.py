@@ -13,7 +13,7 @@ ALL_MATS = m.query(criteria={"elements": {"$in": ALL_ELEMENTS}}, properties=[
                    "material_id", "total_magnetization", "e_above_hull", "elements", "unit_cell_formula", "band_gap"])
 print("--- %s seconds ---" % (time.time() - start_time))
 materials_properties = ["material_id", "total_magnetization",
-                        "e_above_hull", "elements", "unit_cell_formula", "band_gap"]
+                        "e_above_hull", "elements", "unit_cell_formula", "band_gap", "formula"]
 csv_file = "materials.csv"
 
 

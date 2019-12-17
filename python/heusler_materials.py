@@ -22,11 +22,11 @@ with open('material_data.csv', mode='r') as csv_file:
     for row in csv_reader:
         row["elements"] = parse_array(row["elements"])
         row["unit_cell_formula"] = parse_dict(row["unit_cell_formula"])
-        row["e_above_hull"] = float(row["e_above_hull"])
+        row["formula"] = parse_dict(row["formula"])
+       # row["e_above_hull"] = float(row["e_above_hull"])
         ALL_MATS.append(row)
 
 print(ALL_MATS)
-
 
 """
 Heusler compounds [X2, Y, Z]
